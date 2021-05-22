@@ -6,12 +6,12 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /bandongho/
+RewriteBase /XAY_DUNG_WEB2_BAN_DONG_HO/
 RewriteRule ^index\.php$ - [L]
-RewriteRule ^ducduc/?$ /bandongho/wp-login.php [QSA,L]
+RewriteRule ^ducduc/?$ /XAY_DUNG_WEB2_BAN_DONG_HO/wp-login.php [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /bandongho/index.php [L]
+RewriteRule . /XAY_DUNG_WEB2_BAN_DONG_HO/index.php [L]
 </IfModule>
 
 # END WordPress
